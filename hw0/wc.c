@@ -21,7 +21,7 @@ void wc(FILE *ofile, FILE *infile, char *inname) {
 					word_count++;
 					word_flag = 0;
 				}
-				else if (c != ' ' || c != '\n'){
+				else if (c != ' ' && c != '\n'){
 					word_flag = 1;
 				}
 				if(c == '\n'){
@@ -38,7 +38,7 @@ void wc(FILE *ofile, FILE *infile, char *inname) {
 				word_count++;
 				word_flag = 0;
 			}
-			else if (c != ' ' || c != '\n'){
+			else if (c != ' ' && c != '\n'){
 				word_flag = 1;
 			}
 			if(c == '\n'){
